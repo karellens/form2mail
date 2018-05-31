@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sended = mail($to, strip_tags($sd['form_data']['subject']), render('email.template.php', $sd), $headers);
 
         if($sended) {   // if successful sent
-            echo json_encode(['success' => 'Ваш запрос успешно отправлен']);
+            echo json_encode(['success' => 'We have accepted your request and will reply you as soon as possible']);
         } else {
             echo json_encode(['error' => 'mail error']);
         }

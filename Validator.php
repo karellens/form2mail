@@ -8,7 +8,7 @@
  */
 class Validator
 {
-    private $error_message_prefix = 'Неверно введены значения: ';
+    private $error_message_prefix = 'Invalid values: ';
     private $rules = [];
     private $labels = [];
     private $tips = [];
